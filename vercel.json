@@ -3,11 +3,5 @@
   "buildCommand": "next build",
   "outputDirectory": ".next",
   "installCommand": "npm install",
-  "regions": ["bom1"],
-  "env": {
-    "MONGODB_URI": "@mongodb-uri",
-    "EMAIL_USER": "@email-user",
-    "EMAIL_PASS": "@email-pass",
-    "EMAIL_TO": "@email-to"
-  }
+  "regions": ["bom1"]
 }
