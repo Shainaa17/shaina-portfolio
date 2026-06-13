@@ -1,6 +1,6 @@
 # Shaina Gera — Portfolio
 
-A production-ready portfolio for an AI Engineer & Full Stack Developer. Built with Next.js 15, Tailwind CSS, and Framer Motion.
+A production-ready portfolio for an AI Engineer and Full Stack Developer. Built with Next.js 15, Tailwind CSS, and Framer Motion.
 
 ## ✨ Features
 
