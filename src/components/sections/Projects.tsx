@@ -57,7 +57,7 @@ const PROJECTS: Project[] = [
       'Interactive Streamlit dashboard for live inference',
     ],
     pipeline: ['Sensor Stream', 'Preprocessing', 'CNN Layers', 'LSTM Layers', 'Softmax', 'SHAP'],
-    github: 'https://github.com/Shainaa17/human-activity-recognition',
+    github: 'https://github.com/Shainaa17/real-time-human-activity-recognition',
     demo: null,
     featured: true,
     category: 'ml',
