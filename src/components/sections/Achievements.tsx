@@ -2,48 +2,56 @@
 
 import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
-import { IconTrophy, IconStar, IconCode, IconBriefcase, IconBrandGithub } from '@tabler/icons-react'
+import { IconTrophy, IconStar, IconCode, IconAward, IconMedal } from '@tabler/icons-react'
 
 const ACHIEVEMENTS = [
   {
     icon: IconTrophy,
-    title: '₹6,00,000+ Merit Scholarship',
-    description: 'Full merit scholarship awarded for academic excellence and consistent high performance at Thapar Institute.',
+    title: 'JPMorgan Chase Code for Good 2026',
+    description: 'Hackathon Winner, selected among approximately 600–700 finalists from 15,000+ applicants.',
+    color: '#10B981',
+    stat: 'Winner',
+    statLabel: '15,000+ Applicants',
+  },
+  {
+    icon: IconAward,
+    title: 'Flipkart GRiD 8.0',
+    description: 'National Semi-Finalist, ranked among the top 1,000 of 1.7L+ participants nationwide.',
+    color: '#3B82F6',
+    stat: 'Top 1k',
+    statLabel: '1.7L+ Participants',
+  },
+  {
+    icon: IconStar,
+    title: 'Aspire For Her × Logitech',
+    description: 'National Semi-Finalist, selected among the top 2,500 of 1L+ applicants nationwide.',
+    color: '#EC4899',
+    stat: 'Top 2.5k',
+    statLabel: '1L+ Applicants',
+  },
+  {
+    icon: IconTrophy,
+    title: 'Merit-Based Scholarship',
+    description: 'Awarded prestigious scholarship worth ₹6,00,000+ for academic excellence and top performance.',
     color: '#F59E0B',
     stat: '₹6L+',
     statLabel: 'Total Value',
   },
   {
-    icon: IconStar,
+    icon: IconMedal,
     title: 'Tata Cummins Scholarship',
-    description: 'Recipient of Cummins Scholarsgip for outstanding academic performance in Class X, Class XII, First Year, and Second Year of undergraduate studies.',
+    description: 'Recipient of Cummins Scholarship for outstanding academic performance across Class X, Class XII, and undergraduate studies.',
     color: '#6366F1',
     stat: 'Awarded',
-    statLabel: '4x',
+    statLabel: '4x Recipient',
   },
   {
     icon: IconCode,
-    title: '200+ DSA Problems',
+    title: '200+ DSA Problems Solved',
     description: 'Solved over 200 Data Structures and Algorithms problems across LeetCode and competitive programming platforms.',
-    color: '#22D3EE',
+    color: '#06B6D4',
     stat: '200+',
-    statLabel: 'Problems',
-  },
-  {
-    icon: IconBriefcase,
-    title: 'AI/ML Engineering Intern',
-    description: 'Secured a competitive AI/ML internship building production-grade intelligence platforms at Kraftland Intelligence Pvt Ltd.',
-    color: '#8B5CF6',
-    stat: 'Hired',
-    statLabel: 'As Intern',
-  },
-  {
-    icon: IconBrandGithub,
-    title: 'Open Source Contributor',
-    description: 'Active contributor in GirlScript Summer of Code, merging pull requests to real-world open source MERN projects.',
-    color: '#34D399',
-    stat: 'GSSoC',
-    statLabel: '2025',
+    statLabel: 'Problems Solved',
   },
 ]
 

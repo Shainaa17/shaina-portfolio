@@ -17,6 +17,7 @@ const TIMELINE = [
   { year: '2024', label: 'Joined TIET', detail: 'B.E. Computer Engineering', icon: IconCode },
   { year: '2025', label: 'GSSoC Contributor', detail: 'Open Source, MERN Stack', icon: IconCode },
   { year: '2026', label: 'AI/ML Intern', detail: 'Kraftland Intelligence Pvt Ltd', icon: IconBriefcase },
+  { year: '2026', label: 'IT Intern', detail: 'Tata Cummins Limited', icon: IconBriefcase },
 ]
 
 const FOCUS_AREAS = [

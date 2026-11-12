@@ -17,6 +17,7 @@ import {
   IconTruck,
   IconArrowRight,
   IconChevronDown,
+  IconServer,
 } from '@tabler/icons-react'
 
 type Project = {
@@ -38,6 +39,36 @@ type Project = {
 }
 
 const PROJECTS: Project[] = [
+  {
+    id: 'nexuslb',
+    title: 'NexusLB',
+    tagline: 'Health-aware Layer 7 Reverse Proxy & Intelligent Load Balancer in Go',
+    description:
+      'A non-blocking HTTP gateway and intelligent application load balancer engineered from scratch in Go with zero external runtime dependencies. Features five pluggable routing algorithms with live explainability, defense-in-depth token-bucket Edge Shield rate limiting, three-state Circuit Breakers, Layer 7 Canary steering, an autonomous Poisson traffic & chaos simulator, and an embedded SSE real-time data terminal dashboard.',
+    icon: IconServer,
+    accent: '#06B6D4',
+    gradient: 'from-cyan-500/20 to-blue-500/10',
+    badges: [
+      { label: 'Go (Golang)', highlight: true },
+      { label: 'Layer 7 Proxy' },
+      { label: 'Smart Auto Routing' },
+      { label: 'Chaos Engine' },
+      { label: 'SSE Telemetry' },
+    ],
+    stack: ['Go', 'Reverse Proxy', 'Layer 7', 'embed.FS', 'SSE', 'Chart.js', 'Chaos Simulator'],
+    highlights: [
+      'Five routing modes with zero-downtime hot-swapping: Smart Auto (adaptive), Round Robin, Smooth Weighted Round Robin, Least Connections, and IP Hash',
+      'Defense-in-depth resilience: Per-IP token-bucket Edge Shield rate limiting (HTTP 429), three-state Circuit Breakers, and staged retryRecorder failover',
+      'Layer 7 canary steering via headers (X-Canary), query params, and cookies with auto-fallback to stable upstreams and weighted rollouts',
+      'Autonomous real-life Poisson traffic & cluster chaos simulator generating latency spikes, node outages, single-IP DoS, and botnet DDoS attacks with auto-reversion',
+      'Embedded data-terminal telemetry console (embed.FS + SSE) with 4 navigation views (Overview, Pool, Lab, Trace) streaming live metrics at 1 Hz with Chart.js',
+    ],
+    pipeline: ['Client Traffic', 'Edge Shield (429)', 'Smart Auto Balancer', 'Circuit Breaker', 'Canary Steering', 'Upstream Pool'],
+    github: 'https://github.com/Shainaa17/NexusLB',
+    demo: null,
+    featured: true,
+    category: 'fullstack',
+  },
   {
     id: 'har',
     title: 'Human Activity Recognition',
@@ -254,7 +285,7 @@ const FILTERS = [
   { id: 'all', label: 'All Projects' },
   { id: 'ai', label: 'AI / GenAI' },
   { id: 'ml', label: 'Machine Learning' },
-  { id: 'fullstack', label: 'Full Stack' },
+  { id: 'fullstack', label: 'Full Stack & Systems' },
 ]
 
 function PipelineDiagram({ steps, color }: { steps: string[]; color: string }) {
